@@ -1,0 +1,30 @@
+{
+  "name": "dssd-2018-cupones",
+  "version": "1.0.0",
+  "description": "Coupon system - DSSD 2018 - UNLP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ldiazperera/dssd-2018-cupones.git"
+  },
+  "keywords": [
+    "cupones",
+    "coupons",
+    "unlp",
+    "dssd"
+  ],
+  "author": "Ignacio Brocchi, Lucas Diaz Perera, Jonatan Gimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ldiazperera/dssd-2018-cupones/issues"
+  },
+  "homepage": "https://github.com/ldiazperera/dssd-2018-cupones#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4"
+  }
+}
