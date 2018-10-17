@@ -9,7 +9,7 @@
 
 * NodeJS 8.12
 * Express 4.16
-* Mongoose5.3.4"
+* Mongoose 5.3
 
 
 # Para levantar la app
