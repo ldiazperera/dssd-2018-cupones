@@ -20,7 +20,7 @@ exports.cupon_create = function(req, res) {
 };
 
 exports.cupon_details = function(req, res) {
-    Cupon.find({ code: req.params.code }, function(err, cupon) {
+    Cupon.findOne({ code: req.params.code }, function(err, cupon) {
         if (err) return res.status(500).send(err);
         res.send(cupon);
     });
