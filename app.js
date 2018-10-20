@@ -19,8 +19,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/cupones', cupon);
 
-let port = 3001;
-
-app.listen(port, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log('Server is up and running on port numner ' + port);
 });
