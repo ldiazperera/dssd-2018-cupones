@@ -17,6 +17,15 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+// global controller
+app.get('/*',function(req,res,next){
+    
+    if (!req.header('bonita-token') || (req.header('bonita-token') !== 'B0N!T4T0K3N')) {
+        return res.status(403).send('Acceso denegado');
+    }
+    next();
+});
+
 app.use('/cupones', cupon);
 
 let port = process.env.PORT || 3001;
